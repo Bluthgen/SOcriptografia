@@ -9,16 +9,9 @@ def coprime2(a, b):
     return bltin_gcd(a, b) == 1
 
 def is_Prime(n):
-    """
-    Miller-Rabin primality test.
- 
-    A return value of False means n is certainly not prime. A return value of
-    True means n is very likely a prime.
-    """
     if n!=int(n):
         return False
     n=int(n)
-    #Miller-Rabin test for prime
     if n==0 or n==1 or n==4 or n==6 or n==8 or n==9:
         return False
  
